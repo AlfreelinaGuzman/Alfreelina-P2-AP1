@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace  Alfreelina_P2_AP1.UI.Registros
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for registro.xaml
     /// </summary>
     public partial class registro : Window
     {

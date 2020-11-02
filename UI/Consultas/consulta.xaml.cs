@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace  Alfreelina_P2_AP1.UI.Consultas
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for consulta.xaml
     /// </summary>
     public partial class consulta : Window
     {
