@@ -45,7 +45,8 @@
 
         </StackPanel>   
      </StackPanel>
-     <!--DataGrid-->
+
+    <!--DataGrid-->
     <StackPanel Orientation= "Horizontal" Margin="0,0">
                 <DataGrid x:Name="DetalleDataGrid" Height="165" ItemsSource="{Binding MorasDetalle}" AutoGenerateColumns="False" Width="418"  IsReadOnly="True" Margin="0,0,120,0">
                     <DataGrid.Columns>
