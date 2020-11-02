@@ -16,12 +16,12 @@ using System.Windows.Shapes;
 namespace  Alfreelina_P2_AP1.UI.Registros
 {
     /// <summary>
-    /// Interaction logic for registro.xaml
+    /// Interaction logic for rProyecto.xaml
     /// </summary>
-    public partial class registro : Window
+    public partial class rProyecto : Window
     {
 
-        public registro ()
+        public rProyecto()
         {
             InitializeComponent();
         }

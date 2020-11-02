@@ -29,14 +29,14 @@ namespace Alfreelina_P2_AP1
 
         private void Registrar_Click(object sender, RoutedEventArgs e)
         {
-            registro ventana = new registro();
+            rProyecto ventana = new rProyecto();
             ventana.Show();
         }
 
-        private void Consultar_Click(object sender, RoutedEventArgs e)
+       /* private void Consultar_Click(object sender, RoutedEventArgs e)
         {
             consulta ventana = new consulta();
             ventana.Show();
-        }
+        }*/
     }
 }
