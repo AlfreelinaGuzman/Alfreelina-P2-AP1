@@ -16,7 +16,7 @@
         <TextBox x:Name= "ProyectoIDTextBox" Width="100" Text= "{Binding ProyectoID}" Height= "20" HorizontalAlignment= "Left"/>
      
       <!--Boton Buscar-->
-        <Button x:Name ="BuscarButton" Margin="10,0" Width = "70" Height = "30" >
+        <Button x:Name ="BuscarButton" Margin="10,0" Width = "70" Height = "30" Click="BuscarButton_Click">
              <StackPanel Orientation= "Horizontal">       
                 <Image Source= "/Imagenes/Buscar.png" Width="20" Height= "20"/>  
                 <Label Content=" Buscar"/>
