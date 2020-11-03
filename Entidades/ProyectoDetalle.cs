@@ -12,7 +12,7 @@ namespace Alfreelina_P2_AP1.Entidades
         public int ProyectoID { get; set; }
         public int TareaID { get; set; }
         public string Requerimiento { get; set; }
-        public float Tiempo { get; set; }
+        public double Tiempo { get; set; }
     
 
         [ForeignKey("TareaID")]

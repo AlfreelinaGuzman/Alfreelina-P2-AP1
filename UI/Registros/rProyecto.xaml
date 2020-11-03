@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Alfreelina_P2_AP1.UI.Registros"
         mc:Ignorable="d"
-        Title="Registro de Proyectos" Height="557" Width="600" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+        Title="Registro de Proyectos" Height="620" Width="550" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
 	<Grid>
     
 		<StackPanel Orientation= "Vertical" Margin="10,10,10,10">
@@ -30,7 +30,7 @@
   
    <!--Descripcion-->
         <Label Content= "Descripcion" HorizontalAlignment="Left" />
-        <TextBox x:Name= "DescripcionTextBox" Width="100" Text= "{Binding Descripcion}" Height= "20" HorizontalAlignment= "Left"/>
+        <TextBox x:Name= "DescripcionTextBox" Width="200" Text= "{Binding Descripcion}" Height= "100" HorizontalAlignment= "Left"/>
 
         <StackPanel Orientation= "Horizontal" Margin="220,5,5,5">
      <!-- Boton Agregar-->
@@ -50,18 +50,42 @@
         </StackPanel>
         </Button>
 
-        </StackPanel>   
-     </StackPanel>
+      </StackPanel>   
+      </StackPanel>
 
+      <StackPanel Orientation="Vertical">
+    <GroupBox Header="Detalle de tareas a realizar" Margin="0,15,0,0">
+      <StackPanel Orientation="Horizontal" Margin="0,10,0,0"> 
+
+      <StackPanel Orientation="Vertical"> 
+      <Label Content="Tipo de tarea"/> 
+      <ComboBox x:Name="TipoTareaComboBox" Width="100" Margin="0,0,10,0"/>
+      </StackPanel>
+      
+      <StackPanel Orientation="Vertical"> 
+      <Label Content="Requerimiento de la tarea"/> 
+      <TextBox x:Name="RequerimientoTextBox" Height="22"/> 
+      </StackPanel>
+      
+      <StackPanel Orientation="Vertical">
+      <Label Content="Tiempo(minutos)" Margin="5,0" /> 
+      <TextBox x:Name="TiempoTextBox" Height="22" Margin="10,0" TextChanged="TiempoTextBox_TextChanged"/>
+      <!---->
+      </StackPanel> 
+
+      </StackPanel>
+    </GroupBox>
+    </StackPanel>
     <!--DataGrid-->
-    <StackPanel Orientation= "Horizontal" Margin="0,0">
+     <StackPanel Orientation= "Horizontal" Margin="0,0">
                 <DataGrid x:Name="DetalleDataGrid" Height="165" ItemsSource="{Binding ProyectoDetalle}" AutoGenerateColumns="False" Width="418"  IsReadOnly="True" Margin="0,0,120,0">
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="ID" Binding="{Binding ID}"/>
                     </DataGrid.Columns>
                 </DataGrid> 
-    </StackPanel>
+     </StackPanel>
 
+    
 <StackPanel Orientation= "Horizontal" Margin="0,10">
     <!-- Boton Nuevo-->
         <Button x:Name ="NuevoButton"  Width = "80" Height = "30">
@@ -86,7 +110,7 @@
         <Label Content=" Eliminar"/>
         </StackPanel>
         </Button>   
-    </StackPanel>   
     </StackPanel>
+    </StackPanel>   
 	</Grid>
 </Window>

@@ -33,10 +33,10 @@ namespace Alfreelina_P2_AP1
             ventana.Show();
         }
 
-       /* private void Consultar_Click(object sender, RoutedEventArgs e)
+        private void Consultar_Click(object sender, RoutedEventArgs e)
         {
             consulta ventana = new consulta();
             ventana.Show();
-        }*/
+        }
     }
 }
