@@ -20,7 +20,7 @@
                 <Label Content="Critero:"/>
                 <TextBox x:Name="CriterioTextBox" Width="100" Height="25"/>
             </StackPanel>
-            <Button x:Name="ConsultarButton" Height="30" Width="85" Margin="0,20,0,0">
+            <Button x:Name="ConsultarButton" Height="30" Width="85" Margin="0,20,0,0" Click="ConsultarButton_Click">
                 <StackPanel Orientation="Horizontal">
                     <Image Width="18" Height="18" Source="/Imagenes/Consultar.png" />
                     <Label Content="Buscar"/>
@@ -33,7 +33,10 @@
             <DataGrid x:Name="DetalleDataGrid" Height="300" Width="600" AutoGenerateColumns="False" IsReadOnly="True">
                 <DataGrid.Columns>
                    
-                   <DataGridTextColumn Header="ID" Binding="{Binding ID}"/>
+                   <DataGridTextColumn Header="Proyecto ID" Binding="{Binding ProyectoID}"/> 
+                   <DataGridTextColumn Header="Fecha" Binding="{Binding Fecha, StringFormat='dd/MM/yyyy'}"/>
+                    <DataGridTextColumn Header="Descripción" Binding="{Binding Descripcion}"/> 
+                    <DataGridTextColumn Header="Tiempo Total" Binding="{Binding TiempoTotal}"/> 
                 
                 </DataGrid.Columns>
             </DataGrid>

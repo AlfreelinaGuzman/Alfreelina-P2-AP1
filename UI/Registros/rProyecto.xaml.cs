@@ -28,7 +28,6 @@ namespace  Alfreelina_P2_AP1.UI.Registros
         public rProyecto()
         {
            InitializeComponent();
-            this.DataContext = proyectos;
 
             TipoTareaComboBox.ItemsSource = TareasBLL.GetList();
             TipoTareaComboBox.SelectedValuePath = "TareaID";
@@ -109,8 +108,8 @@ namespace  Alfreelina_P2_AP1.UI.Registros
                 MessageBox.Show("No se encontro");
             }
         }
-
-    /*private void AgregarFilaButton_Click(object sender, RoutedEventArgs e) {
+        
+    private void AgregarButton_Click(object sender, RoutedEventArgs e) {
        
        var filaDetalle = new ProyectoDetalle 
      { 
@@ -122,7 +121,7 @@ namespace  Alfreelina_P2_AP1.UI.Registros
       };
 
       proyectos.TiempoTotal += Convert.ToDouble(TiempoTextBox.Text.ToString());
-      this.proyectos.fila.Add(filaDetalle); 
+      this.proyectos.ProyectoDetalle.Add(filaDetalle); 
       Actualizar();
       TipoTareaComboBox.SelectedIndex = -1; 
       RequerimientoTextBox.Clear(); 
@@ -130,13 +129,13 @@ namespace  Alfreelina_P2_AP1.UI.Registros
     }
 
 
-    private void RemoverFilaButton_Click(object sender, RoutedEventArgs e) 
+    private void RemoverButton_Click(object sender, RoutedEventArgs e) 
     { 
         try { 
             double total = Convert.ToDouble(TiempoTotalTextBox.Text); 
          if (DetalleDataGrid.Items.Count >= 1 && DetalleDataGrid.SelectedIndex <= DetalleDataGrid.Items.Count - 1)
           { 
-            proyectos.Detalle.RemoveAt(DetalleDataGrid.SelectedIndex);
+            proyectos.ProyectoDetalle.RemoveAt(DetalleDataGrid.SelectedIndex);
             proyectos.TiempoTotal -= total; 
              Actualizar(); 
          } 
@@ -147,7 +146,7 @@ namespace  Alfreelina_P2_AP1.UI.Registros
         }
    }
 
-*/
+
     private bool Existe()
         {
             Proyectos esValido = ProyectosBLL.Buscar(proyectos.ProyectoID);
