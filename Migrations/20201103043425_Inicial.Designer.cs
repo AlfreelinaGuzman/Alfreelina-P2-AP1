@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Alfreelina_P2_AP1.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20201103011824_Inicial")]
+    [Migration("20201103043425_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

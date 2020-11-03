@@ -101,6 +101,7 @@ namespace  Alfreelina_P2_AP1.UI.Registros
             if(anterior != null)
             {
                 proyectos = anterior;
+                this.DataContext = null;
                 this.DataContext = proyectos;
             }
             else
@@ -115,7 +116,7 @@ namespace  Alfreelina_P2_AP1.UI.Registros
      { 
         ProyectoID = this.proyectos.ProyectoID,
         TareaID = Convert.ToInt32(TipoTareaComboBox.SelectedValue.ToString()),
-        tareas = ((Tareas)TipoTareaComboBox.SelectedItem),
+    //    tareas = ((Tareas)TipoTareaComboBox.SelectedItem),
         Requerimiento = (RequerimientoTextBox.Text), 
         Tiempo = Convert.ToSingle(TiempoTextBox.Text) 
       };

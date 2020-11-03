@@ -15,7 +15,7 @@ namespace Alfreelina_P2_AP1.Entidades
         public double Tiempo { get; set; }
     
 
-        [ForeignKey("TareaID")]
+       [ForeignKey("TareaID")]
 
         public Tareas tareas{get; set;}= new Tareas();
 
